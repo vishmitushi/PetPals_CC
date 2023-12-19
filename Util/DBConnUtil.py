@@ -12,7 +12,7 @@ class dbConnection():
             self.conn = connection.connect(host=l[0], database=l[3], username=l[1], password=l[2])
             if self.conn:
                 print("--Database Is Connected--")
-            self.stmt = self.conn.cursor()
+                self.stmt = self.conn.cursor()
         except Exception as e:
             print(e)
 
